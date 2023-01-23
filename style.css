@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: arial;
+    margin: 0;
+  }
+  nav {
+    background-color: #2277FF;
+    color: white;
+  }
+  .container {
+    /* width: 1024px; */
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav .container a {
+    padding: .5rem 1rem;
+    display: inline-block;
+  }
+  
+  .modal {
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity : 0;
+  }
+
+  .show-modal {
+    bottom: 0;
+    right: 0;
+    opacity : 1;
+    transition : opacity ease-in-out 300ms;
+  }
+  
+  .modal-box {
+    background-color: white;
+    width: 100%;
+    max-width: 24rem;
+    padding: 1rem;
+    position : relative;
+  }
+
+  .close {
+    position : absolute;
+    top : -15px;
+    right : -15px;
+    width : 25px;
+    height : 25px;
+    background : coral;
+    color : white;
+    text-align : center;
+    line-height : 25px;
+    border-radius : 15px;
+    cursor : pointer;
+
+  }
+  
+  .form-input {
+    border: 1px solid #ccc;
+    border-radius: .2rem;
+    display: block;
+    padding: .5rem 1rem;
+    width: 100%;
+  }
+  
+  .form-control {
+    margin-bottom: 1rem;
+  }
+  .form-control label {
+    font-weight: 500;
+    font-size: .875rem;
+  }
+  
+  .btn {
+    border-width: 1px;
+    border-radius: .2rem;
+    padding: .5rem 1rem;
+    border-color: #EEEEEE;
+    background-color: #EEEEEE;
+  }
+  .btn-primary {
+    border-color: #2277FF;
+    background-color: #2277FF;
+    color: white;
+  }
+
+  a {
+    text-decoration : none;
+    color : white;
+    font-weight : bold;
+  }
